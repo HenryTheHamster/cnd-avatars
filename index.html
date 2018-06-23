@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/css/jquery.sweet-dropdown.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Avatars</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+    <script src="vendor/js/jquery.sweet-dropdown.js"></script>
+    <script src="js/avatars.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm" width="500px">
+          <svg id='svg' height="250px" width="500px"></svg>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <div class="row">
+            <button data-dropdown="#dropdown-dark-with-icons">Hair</button>
+            <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons">
+              <ul id='hairList'>
+              </ul>
+            </div>
+            </div>
+            <div class="row">
+            <button data-dropdown="#dropdown-dark-with-icons2">Colour</button>
+            <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons2">
+              <ul id='colourList'>
+              </ul>
+            </div>
+            </div>
+            <div class="row">
+            <button data-dropdown="#dropdown-dark-with-icons3">Glasses</button>
+            <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons3">
+              <ul id='glassesList'>
+              </ul>
+            </div>
+            </div>
+            <!-- </div> -->
+            <div class="row">
+              <label for="selectColour">Colour</label>
+              <select class="form-control" id="selectColour" onchange="changeColor(this)">
+                <option selected value='blue'>Blue</option>
+                <option value='orange'>Orange</option>
+                <option value='pink'>Pink</option>
+                <option value='green'>Green</option>
+                <option value='brown'>Brown</option>
+              </select>
+            </div>
+            <div class="row">
+              <label for="selectHair">Hair</label>
+              <select class="form-control" id="selectHair" onchange="changeHair(this)">
+                <option selected value='1'>Style #1</option>
+                <option value='2'>Style #2</option>
+                <option value='3'>Style #3</option>
+                <option value='4'>Style #4</option>
+                <option value='5'>Style #5</option>
+                <option value='6'>Style #6</option>
+                <option value='7'>Style #7</option>
+                <option value='8'>Style #8</option>
+                <option value='9'>Style #9</option>
+                <option value='10'>Style #10</option>
+                <option value='11'>Style #11</option>
+              </select>
+            </div>
+            <div class="row">
+              <label for="selectGlasses">Glasses</label>
+              <select class="form-control" id="selectGlasses" onchange="changeGlasses(this)">
+                <option selected value='none'>None</option>
+                <option value='1'>Style #1</option>
+                <option value='2'>Style #2</option>
+                <option value='3'>Style #3</option>
+                <option value='4'>Style #4</option>
+              </select>
+            </div>
+            <div class="row">
+              <label for="selectHeadgear">Headgear</label>
+              <select class="form-control" id="selectHeadgear" onchange="changeHeadgear(this)">
+                <option selected value='none'>None</option>
+                <option value='headphones'>Headphones</option>
+                <option value='flower'>Flower</option>
+              </select>
+            </div>
+            <div class="row">
+              <label for="selectFacialHair">Facial Hair</label>
+              <select class="form-control" id="selectFacialHair" onchange="changeFacialHair(this)">
+                <option selected value='none'>None</option>
+                <option value='1'>Style #1</option>
+                <option value='2'>Style #2</option>
+                <option value='3'>Style #3</option>
+
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+        <button onclick="saveAvatar()">SAVE</button>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
