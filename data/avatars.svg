@@ -54,4 +54,5 @@
   <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1573.748" y1="773.473" x2="1576.387" y2="773.803" id="glasses0" transform="matrix(-1, 0, 0, -1, 3150.13501, 1547.276001)"/>
   <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1440.503" y1="724.826" x2="1443.141" y2="725.155" id="headgear0" class="headgear primary" transform="matrix(-1, 0, 0, -1, 2883.644043, 1449.981018)"/>
   <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1440.503" y1="724.826" x2="1443.141" y2="725.155" id="facial_hair0" class="facial-hair primary" transform="matrix(-1, 0, 0, -1, 2883.644043, 1449.981018)"/>
+  <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1440.503" y1="724.826" x2="1443.141" y2="725.155" id="hair0" class="primary hair" transform="matrix(-0.9999999999999999, 0, 0, -0.9999999999999999, 1723.6444711318438, 897.7089854116952)"/>
 </svg>
