@@ -14,97 +14,60 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
     <script src="vendor/js/jquery.sweet-dropdown.js"></script>
+    <script type="text/javascript" src="vendor/js/save-svg-as-png.js"></script>
     <script src="js/avatars.js"></script>
     <div class="container">
       <div class="row">
         <div class="col-sm" width="500px">
-          <svg id='svg' height="250px" width="500px"></svg>
+          <svg id='svg' height="250px" width="500px">
+            
+          </svg>
         </div>
         <div class="col-sm">
           <div class="form-group">
             <div class="row">
-            <button data-dropdown="#dropdown-dark-with-icons">Hair</button>
-            <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons">
-              <ul id='hairList'>
-              </ul>
-            </div>
-            </div>
-            <div class="row">
-            <button data-dropdown="#dropdown-dark-with-icons2">Colour</button>
-            <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons2">
-              <ul id='colourList'>
-              </ul>
-            </div>
+              <button data-dropdown="#hair-select">Hair</button>
+              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="hair-select">
+                <ul id='hairList'>
+                </ul>
+              </div>
             </div>
             <div class="row">
-            <button data-dropdown="#dropdown-dark-with-icons3">Glasses</button>
-            <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons3">
-              <ul id='glassesList'>
-              </ul>
-            </div>
-            </div>
-            <!-- </div> -->
-            <div class="row">
-              <label for="selectColour">Colour</label>
-              <select class="form-control" id="selectColour" onchange="changeColor(this)">
-                <option selected value='blue'>Blue</option>
-                <option value='orange'>Orange</option>
-                <option value='pink'>Pink</option>
-                <option value='green'>Green</option>
-                <option value='brown'>Brown</option>
-              </select>
+              <button data-dropdown="#colour-select">Colour</button>
+              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="colour-select">
+                <ul id='colourList'>
+                </ul>
+              </div>
             </div>
             <div class="row">
-              <label for="selectHair">Hair</label>
-              <select class="form-control" id="selectHair" onchange="changeHair(this)">
-                <option selected value='1'>Style #1</option>
-                <option value='2'>Style #2</option>
-                <option value='3'>Style #3</option>
-                <option value='4'>Style #4</option>
-                <option value='5'>Style #5</option>
-                <option value='6'>Style #6</option>
-                <option value='7'>Style #7</option>
-                <option value='8'>Style #8</option>
-                <option value='9'>Style #9</option>
-                <option value='10'>Style #10</option>
-                <option value='11'>Style #11</option>
-              </select>
+              <button data-dropdown="#glasses-select">Glasses</button>
+              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="glasses-select">
+                <ul id='glassesList'>
+                </ul>
+              </div>
             </div>
             <div class="row">
-              <label for="selectGlasses">Glasses</label>
-              <select class="form-control" id="selectGlasses" onchange="changeGlasses(this)">
-                <option selected value='none'>None</option>
-                <option value='1'>Style #1</option>
-                <option value='2'>Style #2</option>
-                <option value='3'>Style #3</option>
-                <option value='4'>Style #4</option>
-              </select>
+              <button data-dropdown="#headgear-select">Headgear</button>
+              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="headgear-select">
+                <ul id='headgearList'>
+                </ul>
+              </div>
             </div>
             <div class="row">
-              <label for="selectHeadgear">Headgear</label>
-              <select class="form-control" id="selectHeadgear" onchange="changeHeadgear(this)">
-                <option selected value='none'>None</option>
-                <option value='headphones'>Headphones</option>
-                <option value='flower'>Flower</option>
-              </select>
-            </div>
-            <div class="row">
-              <label for="selectFacialHair">Facial Hair</label>
-              <select class="form-control" id="selectFacialHair" onchange="changeFacialHair(this)">
-                <option selected value='none'>None</option>
-                <option value='1'>Style #1</option>
-                <option value='2'>Style #2</option>
-                <option value='3'>Style #3</option>
-
-              </select>
+              <button data-dropdown="#facial-hair-select">Headgear</button>
+              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="facial-hair-select">
+                <ul id='facialHairList'>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg">
-        <button onclick="saveAvatar()">SAVE</button>
-      </div>
+          <button onclick="saveAvatar()">Export SVG</button>
+          <button onclick="exportPNG()">Export PNG</button>
+        </div>
       </div>
     </div>
   </body>
