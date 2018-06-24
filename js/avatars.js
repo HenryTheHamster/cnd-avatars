@@ -122,9 +122,11 @@ function createColourList() {
 }
 
 function createGlassesList(node) {
-  nodes = node.querySelectorAll('.glasses');
+  nodes = node.querySelectorAll('.glasses.primary');
   list = $('#glassesList')[0];
   nodes.forEach(function(n, i) {
+    seconds = node.querySelector('.glasses.secondary.' + n.id)
+    // debugger;
     option = `
     <div class="list-item">
       <li>
@@ -132,9 +134,10 @@ function createGlassesList(node) {
           <div class="list-svg-container">
             <svg width="100%" height="100%" class="list-svg" viewBox="0 0 250 250">
               ${ n.outerHTML }
+              ${ (seconds || {}).outerHTML }
             </svg>
           </div>
-          Hair #${ i }
+          ${ n.label }
         </a>
       </li>
     </div>
@@ -170,7 +173,7 @@ function createHairList(node) {
 }
 
 function createHeadgearList(node) {
-  nodes = node.querySelectorAll('.headgear');
+  nodes = node.querySelectorAll('.headgear.primary');
   list = $('#headgearList')[0];
   nodes.forEach(function(n, i) {
     option = `
@@ -182,7 +185,7 @@ function createHeadgearList(node) {
               ${ n.outerHTML }
             </svg>
           </div>
-          Hair #${ i }
+          ${ n.label }
         </a>
       </li>
     </div>
@@ -205,7 +208,7 @@ function createFacialHairList(node) {
               ${ n.outerHTML }
             </svg>
           </div>
-          Hair #${ n.id }
+          ${ n.label }
         </a>
       </li>
     </div>
@@ -239,6 +242,8 @@ $( document ).ready(function() {
       // hs.append(node2.querySelector('.hair'));
       // $('path').css('visibility', 'hidden');
       $('.list-svg > path').css('fill', 'white', 'important');
+      $('.list-svg > path.glasses.secondary').css('opacity', 0.5, 'important');
+      // $('.list-svg > path.glasses.secondary').css('opacity', 0.5, 'important');
       $('.list-svg > path').css('visibility', 'visible', 'important');
       $('path').css('stroke', 'none');
       $('circle').css('stroke', 'none');
@@ -272,8 +277,8 @@ function changeHair(id) {
 
 function changeHeadgear(id) {
   // if(v)
-  $('#svg > svg > .headgear').css('visibility', 'hidden', 'important');
-  $('#svg > svg > .headgear#' + id).css('visibility', 'visible', 'important');
+  $('#svg > svg > .headgear.primary').css('visibility', 'hidden', 'important');
+  $('#svg > svg > .headgear.primary#' + id).css('visibility', 'visible', 'important');
 }
 
 function changeColour(c) {

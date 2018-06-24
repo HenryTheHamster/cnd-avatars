@@ -17,52 +17,60 @@
     <script type="text/javascript" src="vendor/js/save-svg-as-png.js"></script>
     <script src="js/avatars.js"></script>
     <div class="container">
-      <div class="row">
-        <div class="col-sm" width="500px">
-          <svg id='svg' height="250px" width="500px">
-            
-          </svg>
+      <div class="row justify-content-md-center">
+        <div class="col-sm">
         </div>
         <div class="col-sm">
-          <div class="form-group">
-            <div class="row">
-              <button data-dropdown="#hair-select">Hair</button>
-              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="hair-select">
-                <ul id='hairList'>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <button data-dropdown="#colour-select">Colour</button>
-              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="colour-select">
-                <ul id='colourList'>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <button data-dropdown="#glasses-select">Glasses</button>
-              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="glasses-select">
-                <ul id='glassesList'>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <button data-dropdown="#headgear-select">Headgear</button>
-              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="headgear-select">
-                <ul id='headgearList'>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <button data-dropdown="#facial-hair-select">Headgear</button>
-              <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="facial-hair-select">
-                <ul id='facialHairList'>
-                </ul>
-              </div>
-            </div>
+          <button data-dropdown="#hair-select">Hair</button>
+          <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="hair-select">
+            <ul id='hairList'>
+            </ul>
           </div>
         </div>
+
+        <div class="col-sm">
+          <button data-dropdown="#colour-select">Colour</button>
+          <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="colour-select">
+            <ul id='colourList'>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <button data-dropdown="#glasses-select">Glasses</button>
+          <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="glasses-select">
+            <ul id='glassesList'>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <button data-dropdown="#headgear-select">Headgear</button>
+          <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="headgear-select">
+            <ul id='headgearList'>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <button data-dropdown="#facial-hair-select">Facial&nbspHair</button>
+          <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="facial-hair-select">
+            <ul id='facialHairList'>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm">
+        </div>
       </div>
+      <div class="row">
+          <div class="col">
+            <svg id='svg' height="300px" width="600px">
+            </svg>
+          </div>
+      </div>
+
+
+
       <div class="row">
         <div class="col-lg">
           <button onclick="saveAvatar()">Export SVG</button>
