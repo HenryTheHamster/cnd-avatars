@@ -267,6 +267,7 @@ function changeGlasses(id) {
   // console.log('.glasses.style' + v);
   $('#svg > svg > .glasses').css('visibility', 'hidden', 'important');
   $('#svg > svg > .glasses#' + id).css('visibility', 'visible', 'important');
+  $('#svg > svg > .glasses.secondary.' + id).css('visibility', 'visible', 'important');
 }
 // $('#svg').parentElement.replaceChild(e.contentDocument.documentElement.cloneNode(true), e);
 function changeHair(id) {
