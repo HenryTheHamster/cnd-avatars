@@ -51,7 +51,7 @@
   <circle style="fill: rgb(186, 218, 85);" cx="-130.662" cy="126.127" r="106.455" id="beanie" transform="scale(-1,1)" class="headgear primary" label="Beanie"/>
   <text style="fill: rgb(51, 51, 51); font-family: &quot;Brandon Grotesque Regular&quot;; font-size: 67px; font-weight: bold; white-space: pre;" x="278.953" y="180.698" class="text">NEXT</text>
   <text style="fill: rgb(51, 51, 51); font-family: &quot;Brandon Grotesque Regular&quot;; font-size: 56px; font-weight: bold; white-space: pre;" x="274.927" y="227.664">DOOR</text>
-  <line style="stroke: rgb(0, 0, 0);" x1="221.25272721339547" y1="285.3631709578407" x2="231.987678990875" y2="286.7050399300257" id="glasses0"/>
-  <line style="stroke: rgb(0, 0, 0);" x1="221.25272721339547" y1="285.3631709578407" x2="231.987678990875" y2="286.7050399300257" id="headgear0" transform="matrix(1, 0, 0, 1, 542.115059124621, 197.92567544765876)" class="headgear primary"/>
-  <line style="stroke: rgb(0, 0, 0);" x1="221.25272721339547" y1="285.3631709578407" x2="231.987678990875" y2="286.7050399300257" id="facial_hair0" transform="matrix(1, 0, 0, 1, 542.115059124621, 197.92567544765876)" class="facial-hair primary"/>
+  <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1573.748" y1="773.473" x2="1576.387" y2="773.803" id="glasses0" transform="matrix(-1, 0, 0, -1, 3150.13501, 1547.276001)"/>
+  <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1440.503" y1="724.826" x2="1443.141" y2="725.155" id="headgear0" class="headgear primary" transform="matrix(-1, 0, 0, -1, 2883.644043, 1449.981018)"/>
+  <line style="stroke: rgb(0, 0, 0); visibility: hidden;" x1="1440.503" y1="724.826" x2="1443.141" y2="725.155" id="facial_hair0" class="facial-hair primary" transform="matrix(-1, 0, 0, -1, 2883.644043, 1449.981018)"/>
 </svg>
